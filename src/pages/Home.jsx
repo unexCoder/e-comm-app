@@ -1,6 +1,6 @@
 import React from 'react';
 import products from '../data/db.json';
-import { Card } from '../components/Layout/Card';
+// import { Card } from '../components/Layout/Card';
 
 const Home = () => {
     return (

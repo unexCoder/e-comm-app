@@ -6,7 +6,7 @@ import styles from './Products.module.css';
 export default function Products() {
 
     console.log(products);
-    const product = products[99];
+    // const product = products[99];
     return (
         <>
             <div>Products</div>
