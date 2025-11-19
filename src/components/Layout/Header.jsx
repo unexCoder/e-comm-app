@@ -8,7 +8,7 @@ const Header = () => {
         <h1>e-comm-app</h1>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
             <li><a href="/products">Productos</a></li>
             <li><a href="/cart">Carrito</a></li>
           </ul>
