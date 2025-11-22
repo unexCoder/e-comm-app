@@ -9,9 +9,17 @@ export default function Products() {
     // const product = products[99];
     return (
         <>
-            <div>Products</div>
             {/* Products Grid */}
+            <div style={{padding:'20px'}}>Productos</div>
             <div className={styles.container}>
+                <Card
+                    title="Product Name"
+                    price={99.99}
+                    description="Great product"
+                    image="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw5ac314e1/NU5176DP_N93_24.jpg?imwidth=960&impolicy=pctp&imdensity=1"
+                    actionText="Buy Now!"
+                />
+                <Card {...products[0]} badge="NEW" actionText="View Offer" /> 
                 {products.map(product => (
                     <Card
                         key={product.id}
@@ -26,13 +34,6 @@ export default function Products() {
                         offer={product.offer}
                     />
                 ))}
-                    <Card {...products[0]} badge="NEW" actionText="Buy Now!" /> 
-                    <Card
-                        title="Product Name"
-                        price={99.99}
-                        description="Great product"
-                        image="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw5ac314e1/NU5176DP_N93_24.jpg?imwidth=960&impolicy=pctp&imdensity=1"
-                    />
             </div>
         </>
     )

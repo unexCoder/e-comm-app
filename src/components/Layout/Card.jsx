@@ -75,7 +75,7 @@ export const Card = ({ ...props }) => {
                     <p>{props.description}</p>
 
                     {/* Price and Action */}
-                    <div>
+                    <div className={styles.cardFooter}>
                         <span>${props.price}</span>
                         <button>
                             {props.actionText || 'Add to Cart'}
