@@ -19,7 +19,7 @@ export default function Products() {
                     image="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw5ac314e1/NU5176DP_N93_24.jpg?imwidth=960&impolicy=pctp&imdensity=1"
                     actionText="Buy Now!"
                 />
-                <Card {...products[0]} badge="NEW" actionText="View Offer" /> 
+                <Card {...products[0]} badge="NEW" actionText="View Offer" image="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw5ac314e1/NU5176DP_N93_24.jpg?imwidth=960&impolicy=pctp&imdensity=1"/> 
                 {products.map(product => (
                     <Card
                         key={product.id}
